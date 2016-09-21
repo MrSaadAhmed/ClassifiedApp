@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>|| Js Classified App ||</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+
+    	*{
+
+    		font-family: "Racing Sans One", cursive;
+    	}
+
+    	.in-margin{
+    		margin: 10px;
+    		width: 400px;
+    	}
+
+    	.in-margin img {
+    		width: inherit;
+    	}
+
+    	.wrapper{
+    		margin-top: 75px;
+    	}
+
+    	.navbar {
+    		position: fixed;
+    		top: 0;
+			width: 100%;
+			z-index: 30;
+    	}
+
+    	ul{
+
+    		list-style: none;
+    	}
+
+    	a{
+    		color: #848484;
+    		text-decoration: none;
+    	}
+
+    	a:hover{
+
+    		color: black;
+    		text-decoration: none;
+
+    	}
+
+    	li:hover{
+
+    		color: black;
+
+    	}
+
+    	.add{
+
+
+    	}
+
+
+    </style>
+
+    <script type="text/javascript">
+
+    	function showLaptop(){
+
+    		document.getElementById("title").innerHTML = "Laptops";
+    		document.getElementById("card").style.display= "none";
+    		document.getElementById("hard").style.display= "none";
+    		document.getElementById("board").style.display= "none";
+    		document.getElementById("supply").style.display= "none";
+    	}
+
+    	function showCard(){
+
+    		document.getElementById("title").innerHTML = "Graphic Cards";
+    		document.getElementById("lap").style.display= "none";
+    		document.getElementById("hard").style.display= "none";
+    		document.getElementById("board").style.display= "none";
+    		document.getElementById("supply").style.display= "none";
+    	}
+
+    	function showHard(){
+
+    		document.getElementById("title").innerHTML = "Hard Drives";
+    		document.getElementById("card").style.display= "none";
+    		document.getElementById("lap").style.display= "none";
+    		document.getElementById("board").style.display= "none";
+    		document.getElementById("supply").style.display= "none";
+    	}
+
+    	function showBoard(){
+
+    		document.getElementById("title").innerHTML = "Mother Boards";
+    		document.getElementById("card").style.display= "none";
+    		document.getElementById("hard").style.display= "none";
+    		document.getElementById("lap").style.display= "none";
+    		document.getElementById("supply").style.display= "none";
+    	}
+
+    	function showSupply(){
+
+    		document.getElementById("title").innerHTML = "Power Supply";
+    		document.getElementById("card").style.display= "none";
+    		document.getElementById("hard").style.display= "none";
+    		document.getElementById("board").style.display= "none";
+    		document.getElementById("lap").style.display= "none";
+    	}
+
+    	function viewDetail1(){
+
+    		var w = document.getElementById("lapi1").src;
+    		var x = document.getElementById("lapn1").innerHTML;
+    		var y = document.getElementById("lapd1").innerHTML;
+    		var z = document.getElementById("detailView1");
+    		var html = '<div class="modal fade" id="viewlap1" tabindex="-1" role="dialog">' +
+			    '<div class="modal-dialog" role="document">' +
+			      '<div class="modal-content">' +
+			        '<div class="modal-header">' +
+			          '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+			          '<h3 class="modal-title" id="exampleModalLabel">Detail View</h3>' +
+			        '</div>' +
+			        '<div class="modal-body">' +
+			           '<center>' +
+			           	'<img src="'+ w +'" class="img img-rounded" width="300px" id="vi">' +
+			           '<h3 >'+ x +'</h3>' +
+			           '<p>'+ y +'</p>' +
+			           '</center>' +
+			        '</div>' +
+
+			      '</div>' +
+			    '</div>' +
+			  '</div>' ;
+
+			z.innerHTML = z.innerHTML + html;  
+    	}
+
+    	function viewDetail2(){
+
+    		var w = document.getElementById("lapi2").src;
+    		var x = document.getElementById("lapn2").innerHTML;
+    		var y = document.getElementById("lapd2").innerHTML;
+    		var z = document.getElementById("detailView2");
+    		var html = '<div class="modal fade" id="viewlap2" tabindex="-1" role="dialog">' +
+			    '<div class="modal-dialog" role="document">' +
+			      '<div class="modal-content">' +
+			        '<div class="modal-header">' +
+			          '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+			          '<h3 class="modal-title" id="exampleModalLabel">Detail View</h3>' +
+			        '</div>' +
+			        '<div class="modal-body">' +
+			           '<center>' +
+			           	'<img src="'+ w +'" class="img img-rounded" width="300px" id="vi">' +
+			           '<h3 >'+ x +'</h3>' +
+			           '<p>'+ y +'</p>' +
+			           '</center>' +
+			        '</div>' +
+
+			      '</div>' +
+			    '</div>' +
+			  '</div>' ;
+
+			z.innerHTML = z.innerHTML + html;  
+    	}
+
+    	function viewDetail3(){
+
+    		var w = document.getElementById("lapi3").src;
+    		var x = document.getElementById("lapn3").innerHTML;
+    		var y = document.getElementById("lapd3").innerHTML;
+    		var z = document.getElementById("detailView3");
+    		var html = '<div class="modal fade" id="viewlap3" tabindex="-1" role="dialog">' +
+			    '<div class="modal-dialog" role="document">' +
+			      '<div class="modal-content">' +
+			        '<div class="modal-header">' +
+			          '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+			          '<h3 class="modal-title" id="exampleModalLabel">Detail View</h3>' +
+			        '</div>' +
+			        '<div class="modal-body">' +
+			           '<center>' +
+			           	'<img src="'+ w +'" class="img img-rounded" width="300px" id="vi">' +
+			           '<h3 >'+ x +'</h3>' +
+			           '<p>'+ y +'</p>' +
+			           '</center>' +
+			        '</div>' +
+
+			      '</div>' +
+			    '</div>' +
+			  '</div>' ;
+
+			z.innerHTML = z.innerHTML + html;  
+    	}
+
+    	function viewDetail4(){
+
+    		var w = document.getElementById("lapi4").src;
+    		var x = document.getElementById("lapn4").innerHTML;
+    		var y = document.getElementById("lapd4").innerHTML;
+    		var z = document.getElementById("detailView4");
+    		var html = '<div class="modal fade" id="viewlap4" tabindex="-1" role="dialog">' +
+			    '<div class="modal-dialog" role="document">' +
+			      '<div class="modal-content">' +
+			        '<div class="modal-header">' +
+			          '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+			          '<h3 class="modal-title" id="exampleModalLabel">Detail View</h3>' +
+			        '</div>' +
+			        '<div class="modal-body">' +
+			           '<center>' +
+			           	'<img src="'+ w +'" class="img img-rounded" width="300px" id="vi">' +
+			           '<h3 >'+ x +'</h3>' +
+			           '<p>'+ y +'</p>' +
+			           '</center>' +
+			        '</div>' +
+
+			      '</div>' +
+			    '</div>' +
+			  '</div>' ;
+
+			z.innerHTML = z.innerHTML + html;  
+    	}
+
+    	function viewDetail5(){
+
+    		var w = document.getElementById("cardi1").src;
+    		var x = document.getElementById("cardn1").innerHTML;
+    		var y = document.getElementById("cardd1").innerHTML;
+    		var z = document.getElementById("detailView5");
+    		var html = '<div class="modal fade" id="viewcard" tabindex="-1" role="dialog">' +
+			    '<div class="modal-dialog" role="document">' +
+			      '<div class="modal-content">' +
+			        '<div class="modal-header">' +
+			          '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+			          '<h3 class="modal-title" id="exampleModalLabel">Detail View</h3>' +
+			        '</div>' +
+			        '<div class="modal-body">' +
+			           '<center>' +
+			           	'<img src="'+ w +'" class="img img-rounded" width="300px" id="vi">' +
+			           '<h3 >'+ x +'</h3>' +
+			           '<p>'+ y +'</p>' +
+			           '</center>' +
+			        '</div>' +
+
+			      '</div>' +
+			    '</div>' +
+			  '</div>' ;
+
+			z.innerHTML = z.innerHTML + html;  
+    	}
+
+    	function viewDetail6(){
+
+    		var w = document.getElementById("cardi2").src;
+    		var x = document.getElementById("cardn2").innerHTML;
+    		var y = document.getElementById("cardd2").innerHTML;
+    		var z = document.getElementById("detailView6");
+    		var html = '<div class="modal fade" id="viewCard2" tabindex="-1" role="dialog">' +
+			    '<div class="modal-dialog" role="document">' +
+			      '<div class="modal-content">' +
+			        '<div class="modal-header">' +
+			          '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+			          '<h3 class="modal-title" id="exampleModalLabel">Detail View</h3>' +
+			        '</div>' +
+			        '<div class="modal-body">' +
+			           '<center>' +
+			           	'<img src="'+ w +'" class="img img-rounded" width="300px" id="vi">' +
+			           '<h3 >'+ x +'</h3>' +
+			           '<p>'+ y +'</p>' +
+			           '</center>' +
+			        '</div>' +
+
+			      '</div>' +
+			    '</div>' +
+			  '</div>' ;
+
+			z.innerHTML = z.innerHTML + html;  
+    	}
+
+    	function viewDetail7(){
+
+    		var w = document.getElementById("cardi3").src;
+    		var x = document.getElementById("cardn3").innerHTML;
+    		var y = document.getElementById("cardd3").innerHTML;
+    		var z = document.getElementById("detailView7");
+    		var html = '<div class="modal fade" id="viewCard3" tabindex="-1" role="dialog">' +
+			    '<div class="modal-dialog" role="document">' +
+			      '<div class="modal-content">' +
+			        '<div class="modal-header">' +
+			          '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+			          '<h3 class="modal-title" id="exampleModalLabel">Detail View</h3>' +
+			        '</div>' +
+			        '<div class="modal-body">' +
+			           '<center>' +
+			           	'<img src="'+ w +'" class="img img-rounded" width="300px" id="vi">' +
+			           '<h3 >'+ x +'</h3>' +
+			           '<p>'+ y +'</p>' +
+			           '</center>' +
+			        '</div>' +
+
+			      '</div>' +
+			    '</div>' +
+			  '</div>' ;
+
+			z.innerHTML = z.innerHTML + html;  
+    	}
+
+    	function viewDetail8(){
+
+    		var w = document.getElementById("cardi4").src;
+    		var x = document.getElementById("cardn4").innerHTML;
+    		var y = document.getElementById("cardd4").innerHTML;
+    		var z = document.getElementById("detailView8");
+    		var html = '<div class="modal fade" id="viewCard4" tabindex="-1" role="dialog">' +
+			    '<div class="modal-dialog" role="document">' +
+			      '<div class="modal-content">' +
+			        '<div class="modal-header">' +
+			          '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+			          '<h3 class="modal-title" id="exampleModalLabel">Detail View</h3>' +
+			        '</div>' +
+			        '<div class="modal-body">' +
+			           '<center>' +
+			           	'<img src="'+ w +'" class="img img-rounded" width="300px" id="vi">' +
+			           '<h3 >'+ x +'</h3>' +
+			           '<p>'+ y +'</p>' +
+			           '</center>' +
+			        '</div>' +
+
+			      '</div>' +
+			    '</div>' +
+			  '</div>' ;
+
+			z.innerHTML = z.innerHTML + html;  
+    	}
+
+    	function imgUpload(input){
+
+    		var input = input.target.files;
+	   		var img_view = document.getElementById('img-view');
+	   		var img_src = '';
+
+    		if(input && input[0]) {
+    			var reader = new FileReader();
+
+    			reader.onload = function (e) {
+    				img_view.src = e.target.result;
+    				img_src = e.target.result;
+    				localStorage.setItem('img_src', e.target.result);
+    			}
+
+    			reader.readAsDataURL(input[0])
+    		}
+
+    		return img_src;
+    	}
+
+    	window.onload=function() {
+	   		var upload = document.getElementById('uploader');
+	   		upload.onchange= function(input){
+	   			var img_src = imgUpload(input);
+
+	   		}
+
+	   		localStorage.setItem('img_src', 'bootstrap/img/sample.png');
+	   	}
+
+    	function newPost(){
+    		var upload = document.getElementById('uploader');
+    		var img_src = localStorage.getItem('img_src');
+
+    		console.log(img_src)
+
+			var newName   = document.forms["postAdd"]["pro_name"].value;
+			var newDes  = document.forms["postAdd"]["pro_des"].value;
+			var newPrice   = document.forms["postAdd"]["pro_price"].value;
+
+			if(newName != "" && newDes != "" && newPrice != ""){
+
+				var publish = document.getElementById("addingPost");
+				var html = '<div class="col-md-3">' +
+				'<div class="thumbnail">' +
+					'<img src="'+img_src+'" class="img-thumbnail" alt="Image Alternate" id="nayai">' +
+					'<div class="caption">' +
+						'<h3 id="nayan">'+ newName +'</h3>' +
+						'<p id="nayad">'+ newDes +'</p>' +
+						'<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#viewnaya"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>' +
+					'</div>' +
+				'</div>' + 
+				'</div>' +
+				'<form name="postAdd" method="POST" id="viewnayaproduct">' +
+				'</form>';
+
+				publish.innerHTML = publish.innerHTML + html;
+
+				var w = document.getElementById("nayai").src;
+	    		var x = document.getElementById("nayan").innerHTML;
+	    		var y = document.getElementById("nayad").innerHTML;
+	    		var z = document.getElementById("viewnayaproduct");
+	    		var html = '<div class="modal fade" id="viewnaya" tabindex="-1" role="dialog">' +
+				    '<div class="modal-dialog" role="document">' +
+				      '<div class="modal-content">' +
+				        '<div class="modal-header">' +
+				          '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+				          '<h3 class="modal-title" id="exampleModalLabel">Detail View</h3>' +
+				        '</div>' +
+				        '<div class="modal-body">' +
+				           '<center>' +
+				           	'<img src="'+ w +'" class="img img-rounded" width="300px" id="vi">' +
+				           '<h3 >'+ x +'</h3>' +
+				           '<p>'+ y +'</p>' +
+				           '</center>' +
+				        '</div>' +
+
+				      '</div>' +
+				    '</div>' +
+				  '</div>' ;
+
+				z.innerHTML = z.innerHTML + html;
+
+				var form =document.getElementById('post-ad');
+	   			var img_view = document.getElementById('img-view');
+
+	   			localStorage.setItem('img_src', 'bootstrap/img/default.gif');
+	   			img_view.src = '';
+
+				form.reset();
+				
+			} else {
+
+				alert("All Fields Are Required");
+				return false;
+			}
+		}
+
+		function validateLogin(){
+
+			var adminName   = document.forms["adminLogin"]["user_name"].value;
+			var adminPass  = document.forms["adminLogin"]["user_pass"].value;
+
+			if(adminName == "admin" && adminPass == "admin"){
+
+				alert("Success");
+
+			} else {
+
+				alert("Please Enter Valid Username Or Password");
+				return false;
+			}
+		}
+		
+
+    </script>
+
+ </head>
+ <body>
+    
+	<!-- Navbar -->
+
+	<nav class="navbar navbar-default ">
+	<div class="container-fluid">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="index.html">Js Classified App</a>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	  <!-- <ul class="nav navbar-nav">
+	    <li><a href="#">Home</a></li>
+	    <li><a href="#">About</a></li>
+	    <li><a href="#">Product</a></li>
+	  </ul> -->
+	  <ul class="nav navbar-nav navbar-right">
+	  	<li><a href="#" data-toggle="modal" data-target="#userLogin">[ Login ]</a></li>
+	    <li><a href="#" data-toggle="modal" data-target="#addPostModal">[ Post Add ]</a></li>
+	  </ul>
+	</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+	</nav>	
+
+	<!-- Navbar End -->
+
+	<form name="adminLogin" method="POST">
+  <!--  Post modal starts -->
+  <div class="modal fade" id="userLogin" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="exampleModalLabel">Admin Login</h3>
+        </div>
+        <div class="modal-body">          
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Username</label>
+			    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="User Name" name="user_name">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Password</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="user_pass">
+			  </div>
+			  <div class="modal-footer">
+		        <button type="submit" class="btn btn-primary btn-md" onclick="return validateLogin()">
+		            Login
+		         </button>
+		      </div>	  
+        </div>
+      </div>
+    </div>
+  </div> <!-- post modal ends-->
+</form>
+
+	<form id="post-ad" name="postAdd" method="POST">
+  <!--  Post modal starts -->
+  <div class="modal fade" id="addPostModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="exampleModalLabel">Post Your Add</h3>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+              <label for="product-title" class="control-label">Product Name</label>
+              <input type="text" placeholder="Product Name" class="form-control" name="pro_name" >
+            </div>
+            <div class="form-group">
+              <label for="product-desc" class="control-label">Product Description</label>
+              <textarea class="form-control" placeholder="Product Description here . . ." name="pro_des" ></textarea>
+            </div>
+
+               <div class="form-group">
+                <label for="price" class="control-label">
+                  Price
+                  
+                </label>
+
+                <input size="2" type="text" placeholder="100$" class="form-control" name="pro_price" >
+              </div>
+              <div class="form-group"> 
+		    	<label for="exampleInputPassword1">Select Category</label>
+				<select class="form-control">
+				  <option>Laptop</option>
+				  <option>Graphic Cards</option>
+				  <option>Hard Drive</option>
+				  <option>Mother Board</option>
+				  <option>Power Supply</option>
+				</select>
+			</div>
+
+             <div class="form-group">
+              <label for="seller-email" class="control-label">
+                Product Image
+              </label>
+              <input type="file" id="uploader" >
+
+              <div class="in-margin">
+              	<img id="img-view" src="">
+              </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-md"  data-dismiss="modal" onclick="return newPost()">
+            Post Add
+          </button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- post modal ends-->
+</form>
+
+	<!-- Categories Panel -->
+
+	<div class="container-fluid wrapper">
+		<div class="col-md-3">
+			<ul class="list-group">
+				<li class="list-group-item" style="background-color:#c4c4c4"><h2>Categories</h2></li>
+				<li class="list-group-item" style="background-color:#E7E7E7"><a href="#"><span class="glyphicon glyphicon-triangle-right" style="background-color:#E7E7E7" onclick="showLaptop();">Laptop</span></a></li>
+				<li class="list-group-item" style="background-color:#E7E7E7"><a href="#"><span class="glyphicon glyphicon-triangle-right" onclick="showCard()">Graphic Card</span></a></li>
+				<li class="list-group-item" style="background-color:#E7E7E7"><a href="#"><span class="glyphicon glyphicon-triangle-right" onclick="showHard()">Hard Drives</span></a></li>
+				<li class="list-group-item" style="background-color:#E7E7E7"><a href="#"><span class="glyphicon glyphicon-triangle-right" onclick="showBoard()">Motherboards</span></a></li>
+				<li class="list-group-item" style="background-color:#E7E7E7"><a href="#"><span class="glyphicon glyphicon-triangle-right" onclick="showSupply()">Power Supply</span></a></li>
+			</ul>
+		</div>
+		<div class="col-md-9">
+			    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill"><img src="bootstrap/img/c1.jpg" width='970px' height='290px'></div>
+                <div class="carousel-caption">
+                <h3>Laptop</h3>
+          		<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill"><img src="bootstrap/img/c2.jpg" width='970px' height='290px'></div>
+                <div class="carousel-caption">
+                <h3>Graphic Card</h3>
+          		<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill"><img src="bootstrap/img/c4.jpg" width='970px' height='290px'></div>
+                <div class="carousel-caption">
+                <h3>Hard Drive</h3>
+          		<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill"><img src="bootstrap/img/c3.jpg" width='970px' height='290px'></div>
+                <div class="carousel-caption">
+                <h3>Mother Board</h3>
+          		<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill"><img src="bootstrap/img/c5.jpg" width='970px' height='290px'></div>
+                <div class="carousel-caption">
+                <h3>Power Supply</h3>
+          		<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+		</div>
+	</div>
+
+	<!-- Categories Panel End -->
+
+	<!-- Random Item -->
+
+		<div class="container pro">
+			<h1 id="title">All Products</h1>
+			<hr style="color:black;">
+			<div class="laptop" id="lap">
+				<div class="col-md-3">
+					<div class="caption thumbnail" id="div2">
+					<img src="bootstrap/img/lap1.jpg" class="img-thumbnail" alt="Image Alternate" id="lapi1">
+						<h3 id="lapn1"> Name</h3>
+						<p id="lapd1">Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#viewlap1" onclick="viewDetail1()"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+				</div>
+			</div>
+
+			<form name="postAdd" method="POST" id="detailView1">
+			</form>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/lap2.jpg" class="img-thumbnail" alt="Image Alternate" id="lapi2">
+					<div class="caption">
+						<h3 id="lapn2">Product Name</h3>
+						<p id="lapd2">Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#viewlap2" onclick="viewDetail2()"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<form name="postAdd" method="POST" id="detailView2">
+			</form>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/lap3.jpg" class="img-thumbnail" alt="Image Alternate" id="lapi3">
+					<div class="caption">
+						<h3 id="lapn3">Product Name</h3>
+						<p id="lapd3">Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#viewlap3" onclick="viewDetail3()"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<form name="postAdd" method="POST" id="detailView3">
+			</form>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/lap4.jpg" class="img-thumbnail" alt="Image Alternate" id="lapi4">
+					<div class="caption">
+						<h3 id="lapn4">Product Name</h3>
+						<p id="lapd4">Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#viewlap4" onclick="viewDetail4()"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<form name="postAdd" method="POST" id="detailView4">
+			</form>
+
+			</div>
+			
+			<div class="Graphic Card" id="card">
+				<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/card1.jpg" class="img-thumbnail" alt="Image Alternate" id="cardi1">
+					<div class="caption">
+						<h3 id="cardn1">Product Name</h3>
+						<p id="card1">Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#viewcard" onclick="viewDetail5()"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<form name="postAdd" method="POST" id="detailView5">
+			</form>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/card2.jpg" class="img-thumbnail" alt="Image Alternate" id="cardi2">
+					<div class="caption">
+						<h3 id="cardn2">Product Name</h3>
+						<p id="cardd2">Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#viewCard2" onclick="viewDetail6()"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<form name="postAdd" method="POST" id="detailView6">
+			</form>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/card3.jpg" class="img-thumbnail" alt="Image Alternate" id="cardi3">
+					<div class="caption">
+						<h3 id="cardn3">Product Name</h3>
+						<p id="cardd3">Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#viewCard3" onclick="viewDetail7()"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<form name="postAdd" method="POST" id="detailView7">
+			</form>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/card4.jpg" class="img-thumbnail" alt="Image Alternate" id="cardi4">
+					<div class="caption">
+						<h3 id="cardn4">Product Name</h3>
+						<p id="cardd4">Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#viewCard4" onclick="viewDetail8()"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<form name="postAdd" method="POST" id="detailView8">
+			</form>
+		
+			<div class="Hard Drive" id="hard">
+				<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/hard1.jpg" class="img-thumbnail" alt="Image Alternate">
+					<div class="caption">
+						<h3>Product Name</h3>
+						<p>Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/hard2.jpg" class="img-thumbnail" alt="Image Alternate">
+					<div class="caption">
+						<h3>Product Name</h3>
+						<p>Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/hard3.jpg" class="img-thumbnail" alt="Image Alternate">
+					<div class="caption">
+						<h3>Product Name</h3>
+						<p>Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/hard4.jpg" class="img-thumbnail" alt="Image Alternate">
+					<div class="caption">
+						<h3>Product Name</h3>
+						<p>Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<div class="Mother Board" id="board">
+				<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/board5.jpg" class="img-thumbnail" alt="Image Alternate">
+					<div class="caption">
+						<h3>Product Name</h3>
+						<p>Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/board2.jpg" class="img-thumbnail" alt="Image Alternate">
+					<div class="caption">
+						<h3>Product Name</h3>
+						<p>Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/board3.jpg" class="img-thumbnail" alt="Image Alternate">
+					<div class="caption">
+						<h3>Product Name</h3>
+						<p>Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/board4.jpg" class="img-thumbnail" alt="Image Alternate">
+					<div class="caption">
+						<h3>Product Name</h3>
+						<p>Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<div class="Power Supply" id="supply">
+				<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/sup1.jpg" class="img-thumbnail" alt="Image Alternate">
+					<div class="caption">
+						<h3>Product Name</h3>
+						<p>Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/sup2.jpg" class="img-thumbnail" alt="Image Alternate">
+					<div class="caption">
+						<h3>Product Name</h3>
+						<p>Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/sup3.jpg" class="img-thumbnail" alt="Image Alternate">
+					<div class="caption">
+						<h3>Product Name</h3>
+						<p>Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="thumbnail">
+					<img src="bootstrap/img/sup4.jpg" class="img-thumbnail" alt="Image Alternate">
+					<div class="caption">
+						<h3>Product Name</h3>
+						<p>Product Detail Here....</p>
+						<a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> View Detail</a>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<div id="addingPost">
+				
+			</div>
+
+		</div>
+
+	<!-- Randon Item End -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
